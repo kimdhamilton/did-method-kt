@@ -4,7 +4,7 @@ A thought exercise DID method based on [Google's key transparency project](https
 ## Author
 Kim Hamilton Duffy 
 
-## Background
+## Abstract
 
 Google's key transparency project, based on Certificate Transparency and CONIKS, enables a tamper-proof audit log of name-to-key mappings.  The goal is to make it easier to detect and track fraudulent key associations, with use cases such as"
 
@@ -15,6 +15,7 @@ The goal of this DID method is to express key transparency as a DID method with 
 
 - exploring non-blockchain target systems
 - enable interop with promising transparency log approaches, which alsp seek to address weaknesses in the public PKI trust process.
+- exploring a DID method in which IDs are expected to be "stickier" and for broader public use; e.g. my public PGP key (vs pairwise DIDs)
  
 ## Target System
 
