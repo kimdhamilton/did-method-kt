@@ -1,14 +1,24 @@
 # did-method-kt
-DID method based on key transparency. Thought exercise DID method.
+A thought exercise DID method based on [Google's key transparency project](https://github.com/google/keytransparency/). 
 
 ## Author
 Kim Hamilton Duffy 
 
 ## Background
 
+Google's key transparency project, based on Certificate Transparency and CONIKS, enables a tamper-proof audit log of name-to-key mappings.  The goal is to make it easier to detect and track fraudulent key associations, with use cases such as"
+
+- I can determine if an unknown key has been associated with one of my accounts (and report fraudulent activity, etc)
+- I can use it to help establish the trustworthiness of another account (e.g through stability, history)
+ 
+The goal of this DID method is to express key transparency as a DID method with the goals of:
+
+- exploring non-blockchain target systems
+- enable interop with promising transparency log approaches, which alsp seek to address weaknesses in the public PKI trust process.
+ 
 ## Target System
 
-Key transparency servers...TODO
+Key transparency servers
 
 ## DID Method Name
 
@@ -28,7 +38,7 @@ kt-did = "did:kt:" id
 ### Example
 
 ```
-did:kt:<key>
+did:kt:<id>
 ```
 
 ## JSON-LD Context Definition
@@ -50,7 +60,7 @@ keytransparency-client post <id> \
 
 ### Read (Resolve)
 
-Read uses the get operation
+Read uses the get operation. TODO: This will be a generated DID document, similar to BTCR
 
 ```
 keytransparency-client get <id> --insecure --verbose
